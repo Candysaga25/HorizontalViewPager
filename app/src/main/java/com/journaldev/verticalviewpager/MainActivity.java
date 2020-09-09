@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-import com.journaldev.viewpagervertical.VerticalViewPager;
+import com.journaldev.viewpagervertical.HorizontalViewPager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-    private VerticalViewPager mViewPager;
+    private HorizontalViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,4 +144,6 @@ public class MainActivity extends AppCompatActivity {
             return 3;
         }
     }
+
+
 }

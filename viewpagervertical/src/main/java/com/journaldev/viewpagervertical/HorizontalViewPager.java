@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import retrofit2.Retrofit;
+
 
 public class HorizontalViewPager extends ViewPager {
 
@@ -80,7 +82,12 @@ public class HorizontalViewPager extends ViewPager {
 
         }
     }
+    public void initRetrofit(){
 
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.github.com/")
+                .build();
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
